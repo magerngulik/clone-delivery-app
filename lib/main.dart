@@ -1,6 +1,8 @@
 import './module/user/spacescreen/view/spacescreen_view.dart';
 import 'package:flutter/material.dart';
 
+import 'module/user/home/view/home_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SpacescreenView(),
+      home: HomeView(),
     );
   }
 }

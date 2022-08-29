@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../controller/singup_controller.dart';
 
-class SingupView extends StatelessWidget {
-  const SingupView({Key? key}) : super(key: key);
+class MenuLoginSide extends StatelessWidget {
+  const MenuLoginSide({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,30 +13,6 @@ class SingupView extends StatelessWidget {
       children: [
         const SizedBox(
           height: 40.0,
-        ),
-        Padding(
-          padding: EdgeInsets.only(left: 20),
-          child: Text("Name",
-              style: GoogleFonts.montserrat(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15,
-                  color: Colors.black)),
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: TextFormField(
-            keyboardType: TextInputType.emailAddress,
-            textInputAction: TextInputAction.next,
-            cursorColor: Colors.black,
-            onSaved: (email) {},
-            decoration: const InputDecoration(
-              hintText: "Your Name",
-              prefixIcon: Icon(Icons.email),
-            ),
-          ),
-        ),
-        const SizedBox(
-          height: 20.0,
         ),
         Padding(
           padding: EdgeInsets.only(left: 20),
@@ -83,6 +60,17 @@ class SingupView extends StatelessWidget {
         const SizedBox(
           height: 20.0,
         ),
+        Padding(
+          padding: EdgeInsets.only(left: 20),
+          child: Text("Lupa Password?",
+              style: GoogleFonts.montserrat(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                  color: Colors.black)),
+        ),
+        const SizedBox(
+          height: 20.0,
+        ),
         Center(
           child: Container(
             height: 50,
@@ -97,7 +85,7 @@ class SingupView extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                "Signup",
+                "Login",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 18,

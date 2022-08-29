@@ -3,6 +3,7 @@
     "modules": [
       "user/spacescreen",
       "user/login",
-      "user/singup"
+      "user/singup",
+      "user/home"
     ]
 }
